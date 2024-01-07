@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-border-style {
+    @apply border-solid border-[#1F1F23]
+  }
+
+  .section-paddings {
+    @apply pb-[140px] pt-[80px]
+  }
+}
