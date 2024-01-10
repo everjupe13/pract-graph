@@ -4,12 +4,6 @@ import Network from 'react-graph-vis'
 import { cn } from '@/app/utils'
 import { useGlossaryData } from '@/components/features/glossary-data'
 
-const groups = {
-  1: { color: 'red', shape: 'ellipse' },
-  2: { color: 'blue', shape: 'box' },
-  3: { color: 'yellow', shape: 'box' }
-}
-
 const options = {
   layout: {
     hierarchical: {
@@ -51,7 +45,7 @@ export const GraphNetwork: FC<Props> = ({ className }) => {
 
   return (
     <div className={cn('h-full w-full', className)}>
-      <Network graph={graph} options={options} groups={groups} />
+      <Network graph={graph} options={options} />
     </div>
   )
 }

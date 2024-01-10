@@ -1,1 +1,2 @@
-export { type DataType, useGlossaryData } from './model/store'
+export { useGlossaryData } from './model/store'
+export type { DataType } from './model/types'

@@ -2,7 +2,7 @@ import { create } from 'zustand'
 
 import GLOSSARY_RAW_DATA from '@/data/index.json'
 
-export type DataType = typeof GLOSSARY_RAW_DATA
+import type { DataType } from './types'
 
 type GlossaryDataStore = {
   data: DataType
