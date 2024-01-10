@@ -26,3 +26,11 @@ export const appTitle = (title: string) => {
 // export const formatRuble = number => {
 //   return `${separateThousands(number || 0)} ₽`
 // }
+
+export const parseJsonSafely = (stringJson: any) => {
+  try {
+    return JSON.parse(stringJson) as object
+  } catch {
+    return null
+  }
+}
